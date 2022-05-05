@@ -19,7 +19,16 @@ namespace OOP06
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SportovecAmater sportovec = new SportovecAmater("Bohdan", 80, 180);
+            sportovec.Trenuj(5);
+            MessageBox.Show( sportovec.ToString());
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SportovecProfesional sportovec = new SportovecProfesional("Bodnar", 80, 180,100);
+            sportovec.Trenuj(5);
+            MessageBox.Show( sportovec.ToString());
         }
     }
 }
